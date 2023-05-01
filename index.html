@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header id="header">
+        <div class="form">
+            <div class="div-inputs">
+                <label for="">Titulo</label>
+                <input type="text" id="title-input" >
+            </div>
+            <div class="div-inputs">
+                <label for="">Duração em minutos</label>
+                <input type="number" id="duration-input" >
+            </div>
+            <div class="div-inputs">
+                <label for="">Avaliação (1 a 5)</label>
+                <input type="number" id="rating-input" min="1" max="5" >
+            </div>
+
+            <button onclick="registerMovies()"> Enviar </button>
+
+        </div>
+        <div class="search">
+            <button onclick="reload()">Reload</button>
+            <input type="text" placeholder="Buscar" id="search-input">
+            <button onclick="searchFunction()" id="search-button"><img id="search-img" src="img/search-line.svg" alt=""></button>
+        </div>
+    </header>
+
+    <h2>Filmes resgistrados</h2>
+    <div class="registredMovies" id="conteiner"></div>
+    <h2>Resultado da pesquisa:</h2>
+    <div id="searchConteiner"></div>
+    <script src="main.js"></script>
+</body>
+</html>
+
